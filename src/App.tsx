@@ -26,12 +26,17 @@ function App() {
   const addExpense = (expense: Expense) => {
      const updatedExpenses = [...expenses, expense];
     const total = updatedExpenses.reduce((sum, e) => sum + e.amount, 0);
+    if(!income){
+      toast.error("⚠️ Cannot add expenses,You should add your income first.")
+      return;
+    }else{
     if(total>Number(income)){
       toast.error("⚠️ Cannot add more expenses as you have reached your income limit!");
       return;
     }else{
     setExpenses(updatedExpenses);
     checkBudgetAlerts(updatedExpenses);}
+  }
   };
 
   const deleteExpense = (id: string) => {
