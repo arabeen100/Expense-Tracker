@@ -54,7 +54,7 @@ npm run build
 ## 🌍 Deployment
 
 This project is deployed and accessible online.
-✨ You can explore the live website here: https://expense-tracker-arabeen.vercel.app/
+✨ You can explore the live website here: [https://expense-tracker-beta-dun-73.vercel.app](https://expense-tracker-beta-dun-73.vercel.app/)
 
 ## 📂 Folder Structure
 src/
